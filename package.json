@@ -1,0 +1,36 @@
+{
+  "name": "evopolicychecker",
+  "version": "1.0.0",
+  "description": "A secure, offline, deterministic policy evaluation engine.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "test": "vitest",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "authorization",
+    "policy",
+    "sdk",
+    "security",
+    "rbac",
+    "abac"
+  ],
+  "author": "Daksha Dubey",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "dependencies": {
+    "evopolicychecker": "^1.0.0",
+    "zod": "^3.22.0"
+  }
+}

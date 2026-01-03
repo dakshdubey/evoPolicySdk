@@ -1,0 +1,24 @@
+# source
+src/
+test/
+tests/
+examples/
+docs/
+.github/
+
+# configs
+.eslintrc.json
+.prettierrc
+tsconfig.json
+
+# images & misc
+*.png
+*.jpg
+*.svg
+
+# local/testing
+node_modules/
+*.log
+test_*.js
+test_*.ts
+verify_db_support.js
